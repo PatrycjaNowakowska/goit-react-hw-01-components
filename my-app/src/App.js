@@ -8,6 +8,9 @@ import data from "./components/statistics/data.json";
 import FriendList from './components/friendlist/FriendList';
 import friends from './components/friendlist/friends.json';
 
+import TransactionHistory from './components/transactionhistory/TransactionHistory';
+import transactions from './components/transactionhistory/transactions.json';
+
 
 function App() {
   return (
@@ -19,9 +22,9 @@ function App() {
         avatar={user.avatar}
         stats={user.stats}
       />
-
       <Statistics title="Upload stats" stats={data} />
       <FriendList friends={friends} />
+      <TransactionHistory items={transactions} />;
     </>
   );
 }
