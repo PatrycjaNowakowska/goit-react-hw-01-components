@@ -1,8 +1,12 @@
 import "./Statistics.css";
 
+function RandomHexColor() {
+  return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+}
+
 const Item = ({ stat }) => {
   return (
-    <li className="item">
+    <li className="stat-item" style= {{ backgroundColor: RandomHexColor() }}>
       <span className="label">{stat.label}</span>
       <span className="percentage"> {stat.percentage}%</span>
     </li>
