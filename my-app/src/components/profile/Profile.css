@@ -11,12 +11,12 @@
     margin: auto;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-.avatar {
+.profileAvatar {
     width: 120px;
     border-radius: 50%;
     padding-top: 20px;
 }
-.name {
+.profileName {
     font-weight: 700;
     font-family: -webkit-pictograph;
 }
