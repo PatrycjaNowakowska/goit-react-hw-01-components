@@ -1,18 +1,17 @@
 .friend-list {
     background-color: rgba(217, 229, 241, 0.678);
-margin: 0;
-padding-top: 35px;
-padding-bottom: 55px;
+    margin: 0;
+    padding-top: 35px;
+    padding-bottom: 55px;
 }
 
 .item {
-        background-color: white;
-           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-list-style: none;
-width: 500px;
-display: flex;
-padding: 15px;
-margin-bottom: 30px;
+    background-color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    width: 500px;
+    display: flex;
+    padding: 15px;
+    margin-bottom: 30px;
 }
 
 .name {
@@ -21,7 +20,25 @@ margin-bottom: 30px;
 }
 
 .avatar {
-     width: 120px;
-     border-radius: 5%;
-     padding-top: 20px;
+    width: 120px;
+    border-radius: 5%;
+    padding-top: 20px;
+}
+
+.online::after,
+.offline::after {
+    content: "\2022";
+    font-size: 70px;
+    font-weight: bold;
+    display: inline-block;
+    padding-top: 18px;
+    padding-right: 30px;
+}
+
+.offline::after {
+    color: red;
+}
+
+.online::after {
+    color: rgb(63, 231, 105);
 }
